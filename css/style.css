@@ -82,31 +82,31 @@
 
     /* features-area-styles */
     
-    .features-area{
+    .quick-list-area{
        display: flex;
        align-items: center;
        margin: 50px 80px;
     }
-    .fetures-images{
+    .quick-list-images{
 
         display: grid;
         grid-template-columns: 1fr 1fr ;
         grid-gap: 20px;
     }
-    .fetures-images>img{
+    .quick-list-images>img{
         width: 200;
         height: 200;
         border-radius: 8px;
         background-color: #FF900E;
     }
-    .fetures-text{
+    .quick-text-area{
         margin-left: 30px;
     }
-    .fetures-title{
+    .quick-text-title{
         font-weight: 700;
         font-size: 45px;
     }
-    .fetures-description{
+    .quick-text-description{
         font-weight: 400;
         font-size: 16px;
         line-height: 26px;
@@ -265,9 +265,23 @@
       display: flex;
       justify-content: space-around;
     }
+    .team-member img{
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px gray;
+        transition: all 360ms ease-in-out; 
+    }
+    .team-member img:hover{
+        box-shadow: 0px 2px 10px;
+    }
     .team-member h3{
-      margin-top: 10px;
-      text-align: center;
+        font-size: 25px;
+        font-weight: 600;
+        margin-top: 10px;
+       text-align: center;
+       color:#131313
+    }
+    .team-member h4{
+        text-align: center;
     }
 
     /* footer  styles */
@@ -291,25 +305,122 @@
 
     /* media quaries */
 
-   @media  screen and (max-width:600px) {
+    @media  screen and (max-width:668px) {
     
-    .features-area {
+      .header-container{
+        flex-direction: column;
+        align-items: center;
+      }
+      .header-nav-bar ul{
+        flex-direction: column;
+        box-shadow: 0px 8px 30px lightgray;
+        padding: 20px;
+        
+      }
+      .header-nav-bar ul  li{
+        margin-top: 15px;
+      }
+      .logo-title{
+        font-size: 30px;
+      }
+      .middle-header{
+        
+        margin-left: -1px;
+      }
+     
+      .middle-title{
+        font-size: 25px;
+        margin-left: 30%;
+      }
+    
+    
+      .quick-list-area {
         flex-direction: column;
     }
-    .fetures-images{
+      .quick-list-images{
         grid-template-columns: 1fr ;
         grid-gap: 20px;
     }
+    .quick-text-areas{
+        margin-left: 30%;
+        background-color: #FF900E;
+        }
+    .quick-text-title{
+      
+        font-size: 30px;
+    }
     .middle-banner img{
         display: none;
+    }
+    .love-enjoyed-title{
+        font-size: 30px;
+        margin-left: 30%;
+    }
+    .love-enjoyed-details{
+        flex-direction: column;
+        
+    }
+    .love-enjoyed-text-area{
+        width: 100%;
+        
+    }
+    .item-title{
+        margin-left: 30%;
+        
+        
+    }
+
+    .some-text-title{
+        font-size: 30px;
+        margin-left: 30%;
+    }
+    .enjoyed-item-description{
+        width: 400px;
+        margin-left: 30%;
     }
     .some-facts-items {
         flex-direction: column;
         gap: 20px;
        
     }
+
+
+    .love-enjoyd-btn{
+        display: none;
+    }
     .arcitect-img{
         display: none;
     }
-    
-   }
+    .sponsor-title{
+        font-size: 30px;
+    }
+    .middle-description{
+        width: 300px;
+        margin-left: 30%;
+        text-align: justify;
+    }
+
+     .sponsor-logo {
+        flex-direction: column;
+     }
+     .sponsor-logo img{
+        margin-bottom: 25px;
+     }
+     /* team section media quaries */
+      .team-title{
+        font-size: 30px;
+        margin-left: 30%;
+      }
+     .team-member{
+        flex-direction: column;
+        justify-content: center;
+     }
+     .team-member img{
+        margin-left: 30%;
+        margin-top: 10px;
+     }
+     .footer{
+        width: 400px;
+        text-align: center;
+     }
+}    
