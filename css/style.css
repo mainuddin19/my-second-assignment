@@ -80,7 +80,7 @@
         margin-bottom:36px ;
     }
 
-    /* features-area-styles */
+    /* quick-list-area-styles  start */
     
     .quick-list-area{
        display: flex;
@@ -115,7 +115,8 @@
         
         margin-bottom: 32px;
     }
-
+    /* quick-list-area-end   */
+    
     /* <!-- fetures experience start --> */
 
     .love-enjoyed{
@@ -144,7 +145,7 @@
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 20px;
-    margin-right: 54px;
+    margin-right: 54px; 
   }
 
 .item-title{
